@@ -1,29 +1,42 @@
-console.log("ciao");
+document.getElementById("send").addEventListener("click", function(){
+    console.log("funziona");
+   
+    const userNameElem = document.getElementById("nome");
+    console.log(userNameElem);
+    const userName = userNameElem.value;
 
-// chiedo all'utente quanti km e quanti anni ha
-const userKm = parseInt(prompt("Ciao Utente! Quanti Km vuoi percorrere?"));
-console.log(userKm);
 
-// chiedo all'utente quanti anni ha?
-const userAge = parseInt(prompt("Ciao Utente! Quanti Anni hai?"));
-console.log(userAge);
+    const userKmElem = document.getElementById("km");
+    console.log(userKmElem);
+    const userKm = userKmElem.value;
 
-// calcolo il costo per km
+
+    const userAgeElem =document.getElementById("anni")
+    console.log(userAgeElem);
+    const userAge = userAgeElem.value;
+    console.log(userKm, userAge);
+
+
+    const userGreeting = `Ciao! ${userName} vuoi percorrere km ${userKm}, `;
+    const userMessage = `secondo la fascia di età, il prezzo del tuo biglietto ${userAge}`;
+    console.log( userGreeting, userMessage);
+
+
+
+
+    // calcolo il costo per km
 const kmPrice = 0.21;
 const basePrice = userKm * kmPrice;
 console.log(basePrice);
 
 
-
 let discount = 0;
-let discountMessage = " Non hai nessun sconto";
+
 
 if(userAge < 18){
     discount = basePrice * 0.2;
-    discountMessage =`Sei minorenne quindi hai uno sconto del 20% ( ${discount.toFixed(2)})`;
 }else if  (userAge > 65) {
     discount = basePrice * 0.4;
-    discountMessage =``;
 } 
 
 // calcolo prezzo finale
@@ -33,5 +46,48 @@ const finalPrice = basePrice - discount;
 console.log(finalPrice.toFixed(2));
 
 
-// prepar il  messaggio
-document.getElementById("result").innerHTML = `il prezzo è ${finalPrice.toFixed(2)}. ${discountMessage}`;
+//out put 
+document.getElementById("greeting").innerHTML = userGreeting;
+document.getElementById("message").innerHTML = userMessage;
+
+document.getElementById("result").innerHTML = `il prezzo finale è di euro ${finalPrice.toFixed(2)}`;
+
+
+const resultSection = document.querySelector(".result-section");
+resultSection.classList.remove("hidden");
+
+}) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

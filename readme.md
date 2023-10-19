@@ -16,17 +16,19 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 
 ## Soluzione
-** Dati **:
-1. chiedere all'utente numero km che vuole percorrere.
-2. chiedere all'utente la sua età.
 
+JS: Tutto deve partire dal testo INVIA 
+il codice va all'interno dellevent listener
 
+**Dati**:
+1. prelevare numero km che l'utente vuole percorrere.
+2. far selezionare il range della la sua età.
 
+**Logica del Programma**
 
-** Logica del Programma **
-3. formula per calcolare il costo in km senza sconto.
-4. formula per calcolare lo sconto del 20%
-5. formula per calcolare lo sconto del 40%
-6. formula per calcolare il prezzo totale del primo sconto
-7. formula per calcolare il prezzo totale del secondo sconto.
-8. applico formula condizionale per far si che si applichi una condizione in una delle tre situazioni.
+1. preparare il messaggio da stampare
+
+**Output**
+1. Trovare l'elemento in HTML dove stampare il risultato
+2. inserire il messaggio in questo elemento
+
