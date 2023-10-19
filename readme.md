@@ -21,6 +21,7 @@ JS: Tutto deve partire dal testo INVIA
 il codice va all'interno dellevent listener
 
 **Dati**:
+1. fra inserire nome e cognome
 1. prelevare numero km che l'utente vuole percorrere.
 2. far selezionare il range della la sua età.
 
@@ -32,3 +33,12 @@ il codice va all'interno dellevent listener
 1. Trovare l'elemento in HTML dove stampare il risultato
 2. inserire il messaggio in questo elemento
 
+
+
+**Resettare tutto**
+
+Aggiungiamao eveny listener nel tasto cancella:
+al click: 
+1. resetta dati dall'input
+2. cancellare i campi dei risultati
+3. nascondere la sezione del risultato
