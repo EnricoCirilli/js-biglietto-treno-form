@@ -1,3 +1,47 @@
 .hidden{
     display: none;
 }
+body{
+    background-color: #B91450;
+    
+}
+h1{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+.left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 200px;
+   background-color: white;
+   height: 10rem;
+   margin: 0 auto;
+
+}
+.center{
+    text-align: center;
+    margin: 100px;
+    padding: 50px;
+}
+.result-section{
+    text-align: center;
+}
+.input-left{
+    margin: 10px;
+}
+.input-center{
+    margin: 10px;
+}
+.input-right{
+    margin: 10px;
+}
+#send{
+    padding: 10px;
+    margin: 10px;
+}
+#clear{
+    padding: 10px;
+    margin: 10px;
+}

@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Calcola il prezzo del tuo biglietto</h1>
+   
 
     <section>
-        <div class="module">
-            <div class="input-item">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+
+        <div class="left">
+            <div class="input-left">
                 <label for="nomecognome"> Nome Cognome</label>
                 <input type="text" id="nome">
             </div>
-            <div class="input-item">
+            <div class="input-center">
                 <label for="km"> Km da percorrere</label>
                 <input type="text" id="km">
             </div>
-            <div class="input-item">
+            <div class="input-right">
                 <label for="anni">Fascia d'età</label>
                 <select id="anni">
                     <option value=""></option>
@@ -30,13 +33,14 @@
                     <option value="prevede uno sconto del 40%">+66</option>
                 </select>
             </div>
+        </div>
 
-            <div class="buttons">
+            <div class="center">
                 <button id="send">Genera</button>
                 <button id="clear">Annulla</button>
             </div>
 
-        </div>
+        
     </section>
     <!-- risultato -->
     <section class="result-section hidden">

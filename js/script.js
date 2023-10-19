@@ -74,6 +74,7 @@ document.getElementById("clear").addEventListener("click", function () {
     document.getElementById("message").innerHTML = "";
     document.getElementById("result").innerHTML = "";
     resultSection.classList.add("hidden");
+   
 
 
     // resettare km
